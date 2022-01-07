@@ -1,0 +1,39 @@
+@import '../functions';
+@import '../variables';
+
+.floatl {
+  position: relative;
+}
+
+.floatl--focused .floatl__label {
+  color: theme-color("primary");
+}
+
+.floatl--active {
+  .floatl__label {
+    opacity: 1;
+    visibility: visible;
+    transition: all ease-in-out 0.15s;
+  }
+
+  .floatl__input {
+    padding: ($input-btn-padding-y * 3) $input-btn-padding-x $input-btn-padding-y;
+  }
+}
+
+.floatl__label {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: $input-btn-padding-y / 2;
+  left: $input-btn-padding-x;
+  font-size: $font-size-xs;
+  font-weight: bold;
+  color: color("gray");
+}
+
+.floatl__input {
+  transition: padding ease-in-out 0.15s, $input-transition;
+}

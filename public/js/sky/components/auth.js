@@ -1,0 +1,1 @@
+"use strict";!function(){var t=Math.floor(298*Math.random()+1),n="000".substring(0,"000".length-t.toString().length)+t.toString();document.body.style.backgroundImage="url('"+unikatSettings.imgPath+n+".jpg')"}();

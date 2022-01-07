@@ -1,0 +1,19 @@
+@import '../functions';
+@import '../variables';
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+
+  .card {
+    margin-top: $card-spacer-y;
+  }
+}

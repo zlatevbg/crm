@@ -1,0 +1,121 @@
+{
+  "private": true,
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "ajaxq": "0.0.7",
+    "apache-server-configs": "^2.15.0",
+    "autoprefixer": "^9.6.5",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "bootstrap": "^4.3.1",
+    "cssnano": "^4.1.10",
+    "datatables.net-bs4": "^1.10.16",
+    "datatables.net-responsive-bs4": "^2.2.1",
+    "datatables.net-rowreorder-bs4": "^1.2.3",
+    "fine-uploader": "^5.15.5",
+    "floatl": "^1.0.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-each": "^0.5.0",
+    "gulp-footer": "^2.0.1",
+    "gulp-header": "^2.0.9",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-include": "^2.3.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglify-es": "^1.0.4",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "loadjs": "^3.5.2",
+    "lost": "^8.3.1",
+    "merge-stream": "^1.0.1",
+    "minimist": "^1.2.0",
+    "node-notifier": "^5.2.1",
+    "photoswipe": "^4.1.2",
+    "popper.js": "^1.12.9",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-import-url": "^4.0.0",
+    "rucksack-css": "^1.0.2",
+    "split-sms": "^0.1.7",
+    "tweezer.js": "^1.4.0",
+    "waypoints": "^4.0.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "impliedStrict": true
+      }
+    },
+    "extends": "standard",
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jquery": true
+    },
+    "plugins": [
+      "standard",
+      "promise"
+    ],
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "always",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ]
+    }
+  },
+  "stylelint": {
+        "extends": "stylelint-config-standard",
+        "rules": {
+            "indentation": 4,
+            "at-rule-no-unknown": [
+                true,
+                {
+                    "ignoreAtRules": [
+                        "include"
+                    ]
+                }
+            ],
+            "no-descending-specificity": null,
+            "function-calc-no-invalid": null
+        }
+    }
+}

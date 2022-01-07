@@ -1,0 +1,29 @@
+$localPath: 'sky';
+
+// Bootstrap
+$enable-grid-classes: false;
+
+$font-size-xs: 0.75rem;
+
+$h1-font-size: 1.75rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1rem;
+$h5-font-size: 0.875rem;
+$h6-font-size: 0.75rem;
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding: 0;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-bg: #fff;
+$breadcrumb-divider: "";
+
+$dropdown-item-padding-x: 1rem;
+
+$blue: #3853a3;
+
+@import "./node_modules/bootstrap/scss/variables";
+
+@lost flexbox flex;
+@lost gutter #{$spacer} * 2;

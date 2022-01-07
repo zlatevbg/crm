@@ -1,0 +1,289 @@
+{
+  "styles": {
+    "sky-main": {
+      "src": [
+        "./resources/sky/assets/sass/main.scss",
+        "./node_modules/@fortawesome/fontawesome-free/css/svg-with-js.css"
+      ],
+      "dst": "./public/css/sky/",
+      "name": "main.css",
+      "watch": [
+        "./resources/sky/assets/sass/main.scss",
+        "./resources/sky/assets/sass/_functions.scss",
+        "./resources/sky/assets/sass/_variables.scss",
+        "./resources/_/assets/sass/vendor/_bootstrap.scss",
+        "./resources/sky/assets/sass/components/multiselect.scss",
+        "./resources/sky/assets/sass/vendor/jquery-ui.scss",
+        "./node_modules/@fortawesome/fontawesome-free/css/svg-with-js.css"
+      ]
+    },
+    "sky-components-auth": {
+      "src": "./resources/sky/assets/sass/components/auth.scss",
+      "dst": "./public/css/sky/components/",
+      "name": "auth.css",
+      "watch": [
+        "./resources/sky/assets/sass/components/auth.scss",
+        "./resources/sky/assets/sass/_functions.scss",
+        "./resources/sky/assets/sass/_variables.scss",
+        "./resources/_/assets/sass/vendor/_bootstrap.scss"
+      ]
+    },
+    "sky-components-datatables": {
+      "src": "./resources/sky/assets/sass/components/datatables.scss",
+      "dst": "./public/css/sky/components/",
+      "name": "datatables.css",
+      "watch": [
+        "./resources/sky/assets/sass/components/datatables.scss",
+        "./resources/sky/assets/sass/_functions.scss",
+        "./resources/sky/assets/sass/_variables.scss",
+        "./resources/_/assets/sass/vendor/_bootstrap.scss"
+      ]
+    },
+    "sky-vendor-photoswipe": {
+      "src": "./resources/sky/assets/sass/vendor/photoswipe.scss",
+      "dst": "./public/css/sky/vendor/",
+      "name": "photoswipe.css",
+      "watch": "./resources/sky/assets/sass/vendor/photoswipe.scss"
+    },
+    "sky-vendor-floatl": {
+      "src": "./resources/sky/assets/sass/vendor/floatl.scss",
+      "dst": "./public/css/sky/vendor/",
+      "name": "floatl.css",
+      "watch": "./resources/sky/assets/sass/vendor/floatl.scss"
+    }
+  },
+  "scripts": {
+    "vendor-babel-polyfill": {
+      "src": "./node_modules/babel-polyfill/dist/polyfill.min.js",
+      "dst": "./public/js/vendor/",
+      "name": "babel-polyfill.js",
+      "watch": "./node_modules/babel-polyfill/dist/polyfill.min.js"
+    },
+    "vendor-jquery": {
+      "src": "./node_modules/jquery/dist/jquery.js",
+      "dst": "./public/js/vendor/",
+      "name": "jquery.js",
+      "watch": "./node_modules/jquery/dist/jquery.js"
+    },
+    "vendor-popper": {
+      "src": "./node_modules/popper.js/dist/umd/popper.js",
+      "dst": "./public/js/vendor/",
+      "name": "popper.js",
+      "watch": "./node_modules/popper.js/dist/umd/popper.js"
+    },
+    "vendor-hammer": {
+      "src": "./node_modules/hammerjs/hammer.js",
+      "dst": "./public/js/vendor/",
+      "name": "hammer.js",
+      "watch": "./node_modules/hammerjs/hammer.js"
+    },
+    "vendor-bootstrap": {
+      "src": [
+        "./node_modules/bootstrap/js/dist/tooltip.js",
+        "./node_modules/bootstrap/js/dist/**/*.js"
+      ],
+      "dst": "./public/js/vendor/",
+      "name": "bootstrap.js",
+      "watch": "./node_modules/bootstrap/js/dist/**/*.js"
+    },
+    "vendor-ajaxq": {
+      "src": "./node_modules/ajaxq/ajaxq.js",
+      "dst": "./public/js/vendor/",
+      "name": "ajaxq.js",
+      "watch": "./node_modules/ajaxq/ajaxq.js"
+    },
+    "vendor-floatl": {
+      "src": "./node_modules/floatl/lib/js/floatl.global.js",
+      "dst": "./public/js/vendor/",
+      "name": "floatl.js",
+      "watch": "./node_modules/floatl/lib/js/floatl.global.js"
+    },
+    "vendor-loadjs": {
+      "src": "./node_modules/loadjs/dist/loadjs.js",
+      "dst": "./public/js/vendor/",
+      "name": "loadjs.js",
+      "watch": "./node_modules/loadjs/dist/loadjs.js"
+    },
+    "vendor-photoswipe": {
+      "src": [
+        "./node_modules/photoswipe/dist/photoswipe.js",
+        "./node_modules/photoswipe/dist/photoswipe-ui-default.js"
+      ],
+      "dst": "./public/js/vendor/",
+      "name": "photoswipe.js",
+      "watch": "./node_modules/photoswipe/dist/photoswipe.js"
+    },
+    "sky-vendor-fontawesome": {
+      "src": "./node_modules/@fortawesome/fontawesome-free/js/all.js",
+      "dst": "./public/js/sky/vendor/",
+      "name": "fontawesome.js",
+      "watch": "./node_modules/@fortawesome/fontawesome-free/js/all.js"
+    },
+    "sky-vendor-datatables": {
+      "src": [
+        "./node_modules/datatables.net/js/jquery.dataTables.js",
+        "./node_modules/datatables.net-rowreorder/js/dataTables.rowReorder.js"
+      ],
+      "dst": "./public/js/sky/vendor/",
+      "name": "datatables.js",
+      "watch": [
+        "./node_modules/datatables.net/js/jquery.dataTables.js",
+        "./node_modules/datatables.net-rowreorder/js/dataTables.rowReorder.js"
+      ]
+    },
+    "sky-vendor-waypoints": {
+      "src": "./node_modules/waypoints/lib/noframework.waypoints.js",
+      "dst": "./public/js/sky/vendor/",
+      "name": "waypoints.js",
+      "watch": "./node_modules/waypoints/lib/noframework.waypoints.js"
+    },
+    "sky-vendor-fine-uploader": {
+      "src": [
+        "./node_modules/fine-uploader/fine-uploader/fine-uploader.core.js",
+        "./node_modules/fine-uploader/dnd/dnd.js"
+      ],
+      "dst": "./public/js/sky/vendor/",
+      "name": "fine-uploader.js",
+      "watch": [
+        "./node_modules/fine-uploader/fine-uploader/fine-uploader.core.js",
+        "./node_modules/fine-uploader/dnd/dnd.js"
+      ]
+    },
+    "sky-vendor-jquery-ui": {
+      "src": "./resources/sky/assets/js/vendor/jquery-ui.js",
+      "dst": "./public/js/sky/vendor/",
+      "name": "jquery-ui.js",
+      "watch": "./resources/sky/assets/js/vendor/jquery-ui.js"
+    },
+    "sky-vendor-split-sms": {
+      "src": "./node_modules/split-sms/dist/split-sms.js",
+      "dst": "./public/js/sky/vendor/",
+      "name": "split-sms.js",
+      "watch": "./node_modules/split-sms/dist/split-sms.js"
+    },
+    "sky-main": {
+      "src": "./resources/sky/assets/js/main.js",
+      "dst": "./public/js/sky/",
+      "name": "main.js",
+      "watch": "./resources/sky/assets/js/main.js",
+      "babel": "true"
+    },
+    "sky-ajax": {
+      "src": "./resources/sky/assets/js/ajax.js",
+      "dst": "./public/js/sky/",
+      "name": "ajax.js",
+      "watch": "./resources/sky/assets/js/ajax.js",
+      "babel": "true"
+    },
+    "sky-datatables": {
+      "src": "./resources/sky/assets/js/datatables.js",
+      "dst": "./public/js/sky/",
+      "name": "datatables.js",
+      "watch": "./resources/sky/assets/js/datatables.js",
+      "babel": "true"
+    },
+    "sky-fine-uploader": {
+      "src": "./resources/sky/assets/js/fine-uploader.js",
+      "dst": "./public/js/sky/",
+      "name": "fine-uploader.js",
+      "watch": "./resources/sky/assets/js/fine-uploader.js",
+      "babel": "true"
+    },
+    "sky-components-split-sms": {
+      "src": "./resources/sky/assets/js/components/split-sms.js",
+      "dst": "./public/js/sky/components/",
+      "name": "split-sms.js",
+      "watch": "./resources/sky/assets/js/components/split-sms.js",
+      "babel": "true"
+    },
+    "sky-components-auth": {
+      "src": "./resources/sky/assets/js/components/auth.js",
+      "dst": "./public/js/sky/components/",
+      "name": "auth.js",
+      "watch": "./resources/sky/assets/js/components/auth.js",
+      "babel": "true"
+    },
+    "sky-components-floatl": {
+      "src": "./resources/sky/assets/js/components/floatl.js",
+      "dst": "./public/js/sky/components/",
+      "name": "floatl.js",
+      "watch": "./resources/sky/assets/js/components/floatl.js",
+      "babel": "true"
+    },
+    "sky-components-tweezer": {
+      "src": "./resources/sky/assets/js/components/tweezer.js",
+      "dst": "./public/js/sky/components/",
+      "name": "tweezer.js",
+      "watch": "./resources/sky/assets/js/components/tweezer.js",
+      "babel": "true"
+    },
+    "sky-components-multiselect": {
+      "src": "./resources/sky/assets/js/components/multiselect.js",
+      "dst": "./public/js/sky/components/",
+      "name": "multiselect.js",
+      "watch": "./resources/sky/assets/js/components/multiselect.js",
+      "babel": "true"
+    },
+    "sky-components-photoswipe": {
+      "src": "./resources/sky/assets/js/components/photoswipe.js",
+      "dst": "./public/js/sky/components/",
+      "name": "photoswipe.js",
+      "watch": "./resources/sky/assets/js/components/photoswipe.js",
+      "babel": "true"
+    }
+  },
+  "copy": {
+    ".htaccess": {
+      "src": "./node_modules/apache-server-configs/dist/.htaccess",
+      "dst": "./public/",
+      "name": ".htaccess",
+      "footer": "\n<IfModule mod_rewrite.c>\n    # Rewrite example.com → www.example.com\n    RewriteEngine On\n    RewriteCond %{HTTP_HOST} ^mespil.local [NC]\n    RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [QSA,L,R=301]\n\n    # Handle Authorization Header\n    RewriteCond %{HTTP:Authorization} .\n    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]\n\n    # Redirect Trailing Slashes If Not A Folder...\n    RewriteCond %{REQUEST_FILENAME} !-d\n    RewriteCond %{REQUEST_URI} (.+)/$\n    RewriteRule ^ %1 [L,R=301]\n\n    # Handle Front Controller...\n    RewriteCond %{REQUEST_FILENAME} !-d\n    RewriteCond %{REQUEST_FILENAME} !-f\n    RewriteRule ^ index.php [L]\n</IfModule>",
+      "replace": {
+        "(Options -MultiViews)": "<IfModule mod_negotiation.c>\n    $1\n</IfModule>",
+        "# (<IfModule mod_rewrite\\.c>\n)#(    RewriteEngine On\n)#(    RewriteCond %\\{HTTPS\\} !=on\n)#(    RewriteRule \\^ https:\/\/%\\{HTTP_HOST\\}%\\{REQUEST_URI\\} \\[R=301,L\\]\n)#( <\/IfModule>)": "$1$2$3$4$5",
+        "(<IfModule mod_rewrite\\.c>\n)(    RewriteEngine On\n)(    # \\(1\\)\n)(    # RewriteCond %\\{HTTPS\\} !=on\n)(    RewriteCond %\\{HTTP_HOST\\} \\^www\\\\.\\(\\.\\+\\)\\$ \\[NC\\]\n)(    RewriteRule \\^ %\\{ENV:PROTO\\}:\/\/%1%\\{REQUEST_URI\\} \\[R=301,L\\]\n)(<\/IfModule>)": "# $1# $2# $3# $4# $5# $6# $7",
+        "# (<IfModule mod_rewrite\\.c>\n)# (    RewriteEngine On\n)# (    RewriteCond %\\{REQUEST_FILENAME\\} !-f\n)# (    RewriteRule \\^\\(\\.\\+\\)\\\\.\\(\\\\d\\+\\)\\\\.\\(bmp\\|css\\|cur\\|gif\\|ico\\|jpe\\?g\\|m\\?js\\|png\\|svgz\\?\\|webp\\|webmanifest)(\\)\\$ \\$1\\.\\$3 \\[L\\]\n)# (<\/IfModule>)": "$1$2$3$4|mp4|ogv|webm|flv|avi|swf|json$5$6"
+      }
+    },
+    "bootstrap.scss": {
+      "src": "./node_modules/bootstrap/scss/bootstrap.scss",
+      "dst": "./resources/_/assets/sass/vendor/",
+      "name": "_bootstrap.scss",
+      "replace": {
+        "^(@import \"(code|grid|custom-forms|badge|jumbotron)\";)$": "// $1",
+        "^@import \"": "@import \"./node_modules/bootstrap/scss/"
+      }
+    },
+    "sky-photoswipe.scss": {
+      "src": [
+        "./node_modules/photoswipe/src/css/_main-settings.scss",
+        "./node_modules/photoswipe/src/css/main.scss",
+        "./node_modules/photoswipe/src/css/default-skin/default-skin.scss"
+      ],
+      "dst": "./resources/sky/assets/sass/vendor/",
+      "name": "photoswipe.scss",
+      "header": "@import '../functions';\n@import '../variables';\n",
+      "replace": {
+        "^(@import \"(../)?main-settings\";)$": "// $1",
+        "^\\$pswp__assets-path: ''": "$pswp__assets-path: '/css/' + $localPath + '/vendor/photoswipe/'"
+      }
+    },
+    "sky-photoswipe-icons": {
+      "src": "./node_modules/photoswipe/src/css/default-skin/*.+(png|svg|gif)",
+      "dst": "./public/css/sky/vendor/photoswipe"
+    }
+  },
+  "images": {
+    "root": {
+      "src": "./public/img/**/*.{gif,jpg,jpeg,png,svg}",
+      "dst": "./public/img/",
+      "watch": "./public/img/**/*"
+    }
+  },
+  "knownOptions": {
+    "default": {
+      "production": false,
+      "skipcache": false
+    }
+  }
+}
